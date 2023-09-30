@@ -1,4 +1,10 @@
 /*Main settings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body{
     font-family:"Roboto" sans-serif;
     color: #434455;
@@ -21,8 +27,11 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+a{
     margin: 0;
+    padding: 0;
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
@@ -43,8 +52,21 @@ Use: When tap link */
 
 /*Hover&Active color:#4D5AE5 (IRIS) */
 
+/*UTILITS*/
+
+.container {
+    width: 1158px; ;
+    padding-left:15px ;
+    padding-right:15px ;
+    margin-left:auto;
+    margin-right:auto;
+    outline: 1px solid tomato;
+}
+
 .link{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -54,6 +76,14 @@ Use: When tap link */
 
 .hiden{
     
+}
+
+
+/*GLOBAL*/
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* Header*/
@@ -66,6 +96,9 @@ Use: When tap link */
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        
+        
 }
 
 .logo-decoration-head{
@@ -75,13 +108,33 @@ Use: When tap link */
 
 /*Nav*/
 
+.wrapp-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapp-nav{
+    display: flex;
+    
+        
+        
+}
+
 .nav-list{
+  display: flex;
+  margin-right: 347px;
+  gap: 40px;
+  margin-left: 76px;
+  
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 color: var(--main-color);
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-left: 0;
+
+
 }
 
 .nav-list-item{
@@ -101,10 +154,12 @@ font-family: "Roboto", sans-serif;
 
 address{
     color: var(--secondary-color);
+  
 }
 
-.adress-list{
+.adress-list{     
     font-style: normal;
+   
 }
 
 
@@ -116,6 +171,7 @@ address{
     line-height: 1.5;
     letter-spacing: 0.02em;
 
+    display: flex;
 }
 
 .contact-list-item{
@@ -125,7 +181,18 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 24px;
+   
+    
+ 
+
 }
+
+.contact-list-item:nth-last-child(1){
+    margin-right:0;
+}
+
+
 
 .contact-list-item:hover,
 .contact-list-item:focus{
