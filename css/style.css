@@ -35,6 +35,10 @@ a
     padding: 0;
 }
 
+img{
+    display: block;
+}
+
 /* Клас для обнулення базових властивостей списків (ul) */
 .list {
     list-style: none;
@@ -75,8 +79,8 @@ Use: When tap link */
     list-style: none;
 }
 
-.hiden{
-    
+.visually-hidden{
+   opacity: 0;
 }
 
 
@@ -89,6 +93,10 @@ section{
 
 /* Header*/
 
+.header-decoration{
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .logo{
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
@@ -97,6 +105,8 @@ section{
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        margin-right: 76px;
 
         
         
@@ -116,18 +126,16 @@ section{
 
 .wrapp-nav{
     display: flex;
-    padding-bottom: 24px;
-    padding-top: 24px;
-    
+    align-items: center;
         
         
 }
 
 .nav-list{
   display: flex;
-  margin-right: 347px;
+  margin-right: 332px;
   gap: 40px;
-  margin-left: 76px;
+  
   
 font-family: "Roboto", sans-serif;
 font-weight: 500;
@@ -147,6 +155,8 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    padding: 24px 0;
 }
 
 .nav-list-item:hover,
@@ -177,6 +187,7 @@ address{
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+    gap:40px;
 }
 
 .contact-list-item{
@@ -186,7 +197,7 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-right: 24px;
+   
    
     
  
@@ -209,6 +220,7 @@ font-family: "Roboto", sans-serif;
 
 .first-section{
     background-color: var(--main-color);
+    padding: 188px 0;
 
 }
 
@@ -242,7 +254,12 @@ font-family: "Roboto", sans-serif;
     color: #ffffff;
     text-align: center;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 
+
+    min-width: 169px;
+    height: 56px;
    padding: 16px 32px 16px 32px; 
     margin: 0 auto;
    
@@ -256,9 +273,11 @@ font-family: "Roboto", sans-serif;
 
 
 /*SECOND SECTION*/
+
 .about{
-    opacity: 0;
+    margin-bottom: 8px;
 }
+
 
 .about-list{
     display: flex;
@@ -377,6 +396,7 @@ background-color: #F4F4FD
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    row-gap: 48px;
 
 }
 
@@ -387,6 +407,7 @@ background-color: #F4F4FD
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--main-color);
+        margin-bottom: 8px;
 
 }
 
@@ -405,6 +426,7 @@ background-color: #F4F4FD
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
+    padding: 32px 16px;
 }
 
 /*Footer*/
