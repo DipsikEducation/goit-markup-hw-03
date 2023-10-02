@@ -80,7 +80,15 @@ Use: When tap link */
 }
 
 .visually-hidden{
-   opacity: 0;
+position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 
@@ -276,6 +284,8 @@ font-family: "Roboto", sans-serif;
 
 .about{
     margin-bottom: 8px;
+    
+    
 }
 
 
@@ -296,6 +306,8 @@ font-family: "Roboto", sans-serif;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-color);
+
+    margin-bottom: 8px;
 
 }
 
@@ -350,7 +362,8 @@ background-color: #F4F4FD
 }
 
 .photo-member{
-    margin-bottom: 32px;
+    
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member{
@@ -361,6 +374,7 @@ background-color: #F4F4FD
     letter-spacing: 0.02em;
     color: var(--main-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-member-descripton{
@@ -370,7 +384,13 @@ background-color: #F4F4FD
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
-    margin-bottom: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-member-wrapper{
+    padding: 32px 0;
+    
 }
 
 
